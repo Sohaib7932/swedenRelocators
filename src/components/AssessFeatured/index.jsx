@@ -105,7 +105,7 @@ const FeatureSection = () => {
                 country: 'Business Visa Assessment"',
                 description:
                   "Evaluate your eligibility for a Swedish business visa, tailored for entrepreneurs and professionals aiming to explore Sweden's business opportunities.",
-                to: "/assessment_register",
+                to: "https://swedenrelocators.se/pages/assessment/business_visa_assessment",
               },
               {
                 img: _as3,
@@ -113,7 +113,7 @@ const FeatureSection = () => {
                 country: "Visit Visa Assessment",
                 description:
                   "Check your qualifications for a Swedish visit visa, perfect for short-term travel or exploring Sweden's culture and attractions.",
-                to: "/visit_visa",
+                to: "https://swedenrelocators.se/pages/assessment/visit_visa_assesment",
               },
               {
                 img: _as2,
@@ -121,7 +121,7 @@ const FeatureSection = () => {
                 country: "Study in Sweden Assesmment",
                 description:
                   "Determine your readiness for a Swedish student visa, helping you pursue academic opportunities in one of Europe’s most innovative education systems.",
-                to: "/student_assessments",
+                to: "https://swedenrelocators.se/pages/assessment/student_assessments",
               },
             ].map((feature, index) => (
               <div
@@ -134,7 +134,7 @@ const FeatureSection = () => {
                       className="featured-thumbnail"
                       style={{ height: "300px" }}
                     >
-                      <a href={feature.to} tabIndex="-1">
+                      <a href={feature.to} tabIndex="-1" >
                         <img
                           className="img-fluid "
                           src={feature.img}
@@ -185,7 +185,7 @@ const FeatureSection = () => {
                 img: _as4,
                 flag: newlogo,
                 country: "Work Permit Assesmment",
-                to: "/Work_permit",
+                to: "https://swedenrelocators.se/pages/assessment/work_permit_assessment",
                 description:
                   "Assess your qualifications for a Swedish work permit, designed for professionals seeking employment opportunities in Sweden’s thriving job market.",
               },
@@ -193,7 +193,7 @@ const FeatureSection = () => {
                 img: _as5,
                 flag: newlogo,
                 country: "Family Reunification Assessment",
-                to: "/family_reunification_assessment",
+                to: "https://swedenrelocators.se/pages/assessment/family_reunification_assessment",
                 description:
                   "Explore your eligibility to reunite with family members in Sweden through a comprehensive family reunification visa evaluation.",
               },
@@ -201,7 +201,7 @@ const FeatureSection = () => {
                 img: _as6,
                 flag: newlogo,
                 country: "Long Term EU Status Assessment",
-                to: "/long_term_eu_status_assessment",
+                to: "https://swedenrelocators.se/pages/assessment/long_term_eu_status_assessment",
                 description:
                   "Find out if you qualify for long-term EU resident status, providing enhanced rights.",
               },
@@ -242,11 +242,7 @@ const FeatureSection = () => {
                       <div className="tw-pt-4">
                         <Link
                   to={feature.to}
-                  className="
-        
-         
-          btn-dark
-        "
+                  className=" btn-dark"
                 >
                   Make An Assessment
                 </Link></div>

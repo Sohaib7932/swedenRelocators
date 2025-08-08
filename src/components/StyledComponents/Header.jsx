@@ -123,7 +123,11 @@ export const NavListDesktop = ({ isTop }) => {
             
             `}
             onClick={() => {
-              navigate(`${item.url}`);
+              if (item.url.startsWith('http://') || item.url.startsWith('https://')) {
+                window.open(item.url, '_blank');
+              } else {
+                navigate(`${item.url}`);
+              }
               dispatch(setBackDrop(false));
               setHoveredItem(null);
             }}
@@ -158,7 +162,11 @@ export const NavListChildLinks = ({ item, navigate, hoveredItem, dispatch, setBa
         <div key={idx} className="tw-col-span-1">
           <ul
             onClick={() => {
-              navigate(`${child.Link}`);
+              if (child.Link.startsWith('http://') || child.Link.startsWith('https://')) {
+                window.open(child.Link, '_blank');
+              } else {
+                navigate(`${child.Link}`);
+              }
               dispatch(setBackDrop(false));
             }}
             className="tw-flex tw-gap-4 tw-w-full tw-items-center !tw-ml-0 !tw-p-2 tw-rounded-md hover:tw-bg-slate-200 tw-cursor-pointer"
@@ -329,7 +337,11 @@ export const SideNavigationBar = ({ item, navigate, selectedNavItem, setOpenMenu
           <div key={idx}>
             <ul
               onClick={() => {
-                navigate(`${child.Link}`);
+                if (child.Link.startsWith('http://') || child.Link.startsWith('https://')) {
+                  window.open(child.Link, '_blank');
+                } else {
+                  navigate(`${child.Link}`);
+                }
                 setOpenMenu(false);
               }}
               className="tw-flex tw-gap-4 tw-w-full tw-items-center !tw-ml-0 !tw-p-2 tw-rounded-md hover:tw-bg-slate-200 tw-cursor-pointer"

@@ -468,21 +468,25 @@ const Navbar = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li className=" ">
-                      <Link
+                      <a
                         className="dropdown-item   tw-text-sm tw-font-medium "
-                        to="/housing"
+                        href="https://swedenrelocators.se/pages/housing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         HOW ITS WORKS
-                      </Link>
+                      </a>
                     </li>
                     <hr className=" tw-border-gray m-0" />
                     <li className=" ">
-                      <Link
+                      <a
                         className="dropdown-item tw-text-sm tw-font-medium "
-                        to="/available_housing"
+                        href="https://swedenrelocators.se/pages/housing/availableHousing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         AVAILABLE HOUSING
-                      </Link>
+                      </a>
                     </li>
                     <hr className=" tw-border-gray m-0" />
                     <li className=" ">
@@ -526,39 +530,41 @@ const Navbar = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li className=" ">
-                      <Link
+                      <a
                         className="dropdown-item tw-text-sm tw-font-medium "
-                        to="/housing"
+                        href="https://swedenrelocators.se/pages/housing"
                       >
                         HOW ITS WORKS
-                      </Link>
+                      </a>
                     </li>
                     {/* <hr className=" tw-border-gray m-0" /> */}
                     <li className=" ">
-                      <Link
+                      <a
                         className="dropdown-item tw-text-sm tw-font-medium "
-                        to="/available_housing"
+                        href="https://swedenrelocators.se/pages/housing/availableHousing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         AVAILABLE HOUSING
-                      </Link>
+                      </a>
                     </li>
                     <hr className=" tw-border-gray m-0" />
                     <li className=" ">
-                      <Link
+                      <a
                         className="dropdown-item tw-text-sm   tw-font-medium"
-                        to="/rent_out_your_housing"
+                        href="https://swedenrelocators.se/pages/housing/rentOutHousing"
                       >
                         RENT OUT YOUR HOUSE
-                      </Link>
+                      </a>
                     </li>
                     <hr className=" tw-border-gray m-0" />
                     <li className=" ">
-                      <Link
+                      <a
                         className="dropdown-item tw-text-sm tw-font-medium"
-                        to="/looking_for_housing"
+                        href="https://swedenrelocators.se/pages/housing/lookingForHousing"
                       >
                         LOOKING FOR HOUSING
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </li>
