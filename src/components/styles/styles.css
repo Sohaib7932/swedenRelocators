@@ -1,0 +1,108 @@
+h2 {
+  @apply md:tw-text-[40px]       tw-font-light tw-text-primary  !important;
+}
+strong {
+  @apply tw-font-semibold  !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+h3 {
+  @apply tw-text-3xl  tw-font-semibold tw-text-black  !important;
+}
+
+h4 {
+  @apply tw-text-2xl  tw-font-semibold   !important;
+}
+h5 {
+  @apply tw-text-xl     !important;
+}
+
+span {
+  @apply tw-text-[13px] tw-uppercase tw-text-blue tw-tracking-wider	 tw-font-bold  !important;
+}
+
+a {
+  @apply tw-no-underline hover:tw-text-blue  !important;
+}
+
+.element-inner:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(0 103 237);
+  width: 25px;
+  height: 25px;
+  top: 43px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  right: 15px;
+  -webkit-transform: rotate(45deg);
+}
+
+.backdrop-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 999; /* Make sure it's above other elements */
+  pointer-events: none;
+}
+
+.hover-effect:hover p {
+  color: white;
+}
+
+p {
+  font-size: 15px !important;
+  line-height: 25px !important;
+}
+
+.p_main {
+  font-size: 24px !important;
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+  padding: 0 !important;
+}
+
+.center .slick-center .project {
+  transform: scale(1.5);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  pointer-events: all;
+  opacity: 1;
+}
+.project.active-slide img {
+  transform: scale(1.9) !important;
+  /* z-index: 2;  */
+}
+
+.center .project {
+  /* opacity: 0.7; */
+  pointer-events: none;
+}
+
+.bg_visitor::before {
+  content: '';
+  position: absolute;
+  left: -134px;
+  right: -100%;
+  height: 100%;
+  display: block;
+  background: url(../assets/images/proccess-box-arrow.png) center left no-repeat;
+  top: -46px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container,
+  .container-lg {
+    width: 1170px !important;
+  }
+}

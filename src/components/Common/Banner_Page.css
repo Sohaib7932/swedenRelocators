@@ -1,0 +1,161 @@
+.hero-section {
+  position: relative;
+  background-color: #1f2437;
+  color: white;
+  padding: 6% 40px;
+  padding-bottom: 2% !important;
+  text-align: left;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  margin-top: 90px;
+  padding-left: 10.5%;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--dynamic-bg);
+  background-size: cover;
+  background-position: right;
+  filter: brightness(0.2); /* Apply brightness to the background only */
+  z-index: 0; /* Behind the text */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Text on top of the background */
+  max-width: 80%;
+}
+
+.regulartextbanner {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ffe67e ;
+  font-size: 0.9em ;
+  max-width: 80%;
+  margin-bottom: 1.5%;
+}
+
+/* Small devices (tablets, 768px and below) */
+/* @media (max-width: 768px) {
+  .highlight {
+      font-size: 36px;
+  }
+
+  .hero-section {
+      margin-top: 60px;
+  }
+
+  .regulartextbanner {
+      font-size: 1.5em;
+  }
+} */
+
+/* Extra small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+  .highlight {
+      font-size: 1em;
+  }
+
+  .hero-section {
+      margin-top: 50px;
+  }
+
+  .hero-section
+  {
+    height: 20%;
+  }
+
+  .regulartextbanner {
+      font-size: 0.7em !important;
+  }
+}
+
+/* Medium devices (tablets, 992px and below) */
+@media (max-width: 992px) {
+  .highlight {
+    padding-top: 10%;
+      font-size: 0.6em;
+  }
+
+
+
+  .regulartextbanner {
+      font-size: 1em ;
+  }
+}
+
+/* Large devices (desktops, 1200px and below) */
+@media (min-width: 1200px) {
+  .highlight {
+      font-size: 0.8em;
+  }
+
+ 
+
+  .regulartextbanner {
+      font-size: 1em;
+  }
+}
+
+/* Extra-large devices (large desktops, 1600px and below) */
+
+
+
+
+
+
+@media (min-width: 1536px)
+{
+  .hero-section
+  {
+    padding-left: 15%; 
+  }
+}
+
+
+/* Ultra-large devices (very large screens, 1600px and above) */
+/* @media (min-width: 1600px) {
+  .highlight {
+    margin-top: 5%;
+      font-size: 1.1em;
+  }
+
+
+  .hero-section
+  {
+   height: 20%;
+  }
+
+  .regulartextbanner {
+      font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .highlight {
+    margin-top: 5%;
+      font-size: 1.3em;
+  }
+
+
+  .hero-section
+  {
+    height: 20%;
+  }
+
+  .regulartextbanner {
+      font-size: 1.3em;
+  }
+} */

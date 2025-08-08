@@ -1,0 +1,18 @@
+@keyframes rotate-border {
+  from {
+    transform: rotate(0deg);
+     border-color: blue;
+  }
+  to {
+    transform: rotate(360deg);
+    border-color: blue;
+  }
+}
+
+.wrapper:hover .border-animate {
+  animation: rotate-border 5s linear infinite;
+
+}
+
+
+

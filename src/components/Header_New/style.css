@@ -1,0 +1,82 @@
+/* Container styles for the widget */
+#google_translate_element {
+    display: block;
+    margin: 0 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Hide the "powered by Google" branding */
+  #google_translate_element .goog-te-gadget > div:first-child {
+    margin: 0px;
+  }
+
+
+  #google_translate_element .goog-te-gadget > div:first-child {
+    display: inline-block;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    color: white !important;
+    cursor: pointer;
+    
+  }
+
+  
+  #google_translate_element .goog-te-gadget > img {
+    display: none;
+  }
+
+
+  .goog-te-gadget img
+  {
+    display: none !important;
+  }
+
+  .goog-te-gadget span
+  {
+    color: white !important;
+  }
+  
+ #goog-gt-tt
+ {
+    background-color: black !important;
+ }
+
+
+ .VIpgJd-ZVi9od-xl07Ob-OEVmcd
+ {
+    background-color: black !important;
+ }
+
+.VIpgJd-ZVi9od-vH1Gmf
+{
+    background-color: black !important;
+}
+
+
+  /* Style the dropdown menu */
+  .goog-te-combo {
+    padding: 8px 12px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif;
+    background-color: green !important;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .goog-te-combo:hover {
+    border-color: green !important;
+    background-color: #e6f2ff !important;
+  }
+  
+  /* Optional: Style the container of the widget */
+  .goog-te-gadget {
+    padding: 5px;
+    text-align: left;
+  }
+  

@@ -1,0 +1,145 @@
+.slider-slide {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1.5s ease-in-out; /* Slower fade-in */
+  }
+  
+  .slider-content {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    max-width: 80%;
+  }
+  
+  .slider-title {
+    font-size: 1em !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out 0.2s; /* Slower and delayed */
+    color: white !important;
+  }
+  
+  .slider-subtitle {
+    font-size: 3em !important;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out 0.4s; /* Slower and delayed */
+    color: white !important;
+   
+    border-left: #0067ed solid 5px;
+    padding-left: 50px;
+  }
+  
+  .highlighted-text {
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  .slider-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0067ed;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out 0.6s; /* Slower and delayed */
+  }
+  
+  .slider-button:hover {
+    background-color: rgb(255,255,255,0); /* Change background color */
+    color: #0067ed; /* Change text color */
+    border: 1px solid #0067ed;
+    
+    /* Add scale animation */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    
+    /* Add a shadow effect */
+    
+    
+   
+    /* Add a rotation effect */
+    transform:  scale(1); /* Slight rotation with scale */
+    
+    /* Add color transition to make it smooth */
+    transition: background-color 1s ease, color 1s ease, transform 1s ease, box-shadow 0s ease;
+  }
+  
+
+
+  .slider-button2 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgv(255,255,255,0);
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out 0.6s; /* Slower and delayed */
+  }
+  
+  .slider-button2:hover {
+    background-color: white; /* Change background color */
+    color: black; /* Change text color */
+    
+    /* Add scale animation */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    
+    /* Add a shadow effect */
+    
+    
+   
+    /* Add a rotation effect */
+    transform: rotate(5deg) scale(1.1); /* Slight rotation with scale */
+    
+    /* Add color transition to make it smooth */
+    transition: background-color 1s ease, color 1s ease, transform 1s ease, box-shadow 0s ease;
+  }
+  
+
+
+ 
+
+
+
+  /* When slide becomes active */
+  .slick-active .slider-content,
+  .slick-active .slider-title,
+  .slick-active .slider-subtitle,
+  .slick-active .slider-button2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slider-button
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

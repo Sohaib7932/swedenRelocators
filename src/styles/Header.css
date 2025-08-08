@@ -1,0 +1,159 @@
+:root {
+  /* Color Variables */
+  --primary-color: #1f2437;
+  --blue-color: #0067ed;
+  --purple-color: #7e5bef;
+  --pink-color: #ff49db;
+  --orange-color: #ff7849;
+  --green-color: #13ce66;
+  --yellow-color: #ffc82c;
+  --gray-dark-color: #1d2143;
+  --gray-color: #898a9c;
+  --gray-light-color: #d3dce6;
+
+  /* Typography Variables */
+  --font-primary: 'Roboto', sans-serif;
+
+  /* Font Sizes */
+  --font-size-small: 0.875rem; /* 14px */
+  --font-size-base-small: 0.88rem;
+  --font-size-base: 1rem; /* 16px */
+  --font-size-large: 1.25rem; /* 20px */
+  --font-size-header: 2rem; /* 32px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-normal: 1.5;
+  --line-height-header: 1.2;
+}
+
+/* Header Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-header);
+}
+
+/* Body Text Style */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: #333; /* Default body text color */
+}
+/* font weight classes */
+.css-font-weight-light {
+  font-weight: 900 !important;
+}
+.top-bar {
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.top-bar.hidden {
+  transform: translateY(-100%);
+}
+
+/* font color classes */
+.css-white {
+  color: #fff !important;
+}
+
+/* Example usage of typography for small text */
+.css-small-text {
+  font-size: var(--font-size-small);
+}
+
+.css-large-text {
+  font-size: var(--font-size-large);
+}
+
+.css-header-text {
+  font-size: var(--font-size-header);
+}
+/* Typography.css */
+.css-typography-heading {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary);
+}
+
+.css-typography-paragraph {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-normal);
+  color: var(--gray-dark);
+}
+
+.css-typography-span {
+  font-family: var(--font-primary);
+  color: var(--gray);
+}
+/* text size classes */
+.css-base-small {
+  font-size: var(--font-size-base-small) !important;
+}
+
+/* navbar */
+.css-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0; /* Sticks to the top */
+  right: 0;
+  left: 0;
+  z-index: 999; /* Ensure it is above other content */
+}
+
+/* flex */
+.css-flex {
+  display: flex;
+  width: 100%;
+}
+
+.css-gap-small {
+  gap: 10px;
+}
+
+.css-gap-medium {
+  gap: 15px;
+}
+
+.css-gap-large {
+  gap: 20px;
+}
+
+.css-justify-center {
+  justify-content: center;
+}
+.css-items-center {
+  align-items: center;
+}
+
+.css-space-between {
+  justify-content: space-between;
+}
+
+.css-flex-direction-column {
+  flex-direction: column;
+}
+
+/* image css */
+.css-image {
+  object-fit: cover;
+}
+
+.css-brand-image-extra-small {
+  max-width: 12rem;
+}
+.css-brand-image-small {
+  max-width: 14rem;
+}

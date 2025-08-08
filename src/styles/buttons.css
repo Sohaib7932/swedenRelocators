@@ -1,0 +1,26 @@
+.btn-indigo {
+  @apply tw-border-black tw-border tw-text-black  tw-rounded-full hover:tw-bg-blue hover:tw-border-blue hover:tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+}
+.btn-warning {
+  @apply tw-border-black tw-border tw-bg-primary tw-text-white  tw-rounded-full hover:tw-bg-blue hover:tw-border-blue hover:tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[35px] tw-py-[13px] tw-cursor-pointer;
+}
+
+.btn-Plain {
+  @apply tw-bg-white tw-rounded-full tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+}
+
+.btn-Transparent {
+  @apply tw-bg-transparent tw-rounded-full tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer tw-text-white !important;
+}
+
+.btn-dark {
+  @apply tw-border tw-rounded-full tw-bg-primary tw-border-primary tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+}
+
+.btn-light {
+  @apply tw-border tw-rounded-full tw-bg-white tw-border-black tw-text-black   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+}
+
+.btn-primary {
+  @apply tw-border tw-rounded-full tw-bg-[#1f2437] tw-border-[#1f2437] tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+}
