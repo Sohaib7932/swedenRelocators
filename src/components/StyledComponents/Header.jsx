@@ -224,7 +224,12 @@ export const NavListMobile = ({ openMenu, selectedNavItem, setSelectedNavItem, s
               <ul
                 className="tw-border-b-[1px] tw-border-gray-light tw-pt-2 tw-min-h-10"
                 onClick={() => {
-                  setSelectedNavItem(selectedNavItem === item.id ? null : item.id);
+                  if (item.childLinks) {
+                    setSelectedNavItem(selectedNavItem === item.id ? null : item.id);
+                  } else {
+                    navigate(item.url);
+                    setOpenMenu(false);
+                  }
                 }}
               >
                 <li>
@@ -255,8 +260,22 @@ export const NavListMobile = ({ openMenu, selectedNavItem, setSelectedNavItem, s
         </ul>
         
         <div className="tw-flex tw-justify-start tw-items-center tw-gap-5 tw-p-4">
-          <Button className={'btn-dark dynamic-text-size'} label={t('Book an Appointment')} />
-          <Button className={'btn-light dynamic-text-size'} label={t('Login')} />
+          <Button 
+            className={'btn-dark dynamic-text-size'} 
+            label={t('Book an Appointment')} 
+            onClick={() => {
+              window.location.href = "https://portalclient.vercel.app";
+              setOpenMenu(false);
+            }}
+          />
+          <Button 
+            className={'btn-light dynamic-text-size'} 
+            label={t('Login')} 
+            onClick={() => {
+              window.location.href = "https://portalclient.vercel.app";
+              setOpenMenu(false);
+            }}
+          />
         </div>
       </div>
     </>
@@ -311,6 +330,7 @@ export const SideNavigationBar = ({ item, navigate, selectedNavItem, setOpenMenu
             <ul
               onClick={() => {
                 navigate(`${child.Link}`);
+                setOpenMenu(false);
               }}
               className="tw-flex tw-gap-4 tw-w-full tw-items-center !tw-ml-0 !tw-p-2 tw-rounded-md hover:tw-bg-slate-200 tw-cursor-pointer"
             >

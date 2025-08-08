@@ -81,7 +81,7 @@ const ServiceSlider = () => {
 
 <img
   src={slide.image}
-  className="tw-absolute tw-top-0 tw-right-0 tw-w-auto tw-h-[100%] tw-self-center tw-object-contain"
+  className="slider-image-responsive tw-absolute tw-top-0 tw-right-0 tw-w-auto tw-h-[100%] tw-self-center tw-object-contain"
 />
 
 

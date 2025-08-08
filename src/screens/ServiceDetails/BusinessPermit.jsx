@@ -43,7 +43,7 @@ const BusinessPermit = () => {
     style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
   >{t(``.replace(/\s+/g, ' ').trim())}<div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">{t(``.replace(/\s+/g, ' ').trim())}<div>{t(``.replace(/\s+/g, ' ').trim())}<span className="tw-flex tw-items-center tw-gap-2">{t(``.replace(/\s+/g, ' ').trim())}<p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Self-Employment`.replace(/\s+/g, ' ').trim())}</span>{t(``.replace(/\s+/g, ' ').trim())}<h2 className="tw-text-left">{t(``.replace(/\s+/g, ' ').trim())}<strong className="tw-text-black">
       {" "}
-      {t('Residence Permit in Sweden')}
+      {t('Resident Permit in Sweden')}
     </strong>{t(``.replace(/\s+/g, ' ').trim())}</h2>{t(``.replace(/\s+/g, ' ').trim())}<br />{t(``.replace(/\s+/g, ' ').trim())}<p className="tw-text-gray">{t(`If you’re a non-EU/EEA citizen aiming to start or expand a
                       business in Sweden, you will need a self-employment
                       residence permit from the Swedish Migration Agency

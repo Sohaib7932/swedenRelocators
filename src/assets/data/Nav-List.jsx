@@ -167,7 +167,7 @@ export const servicesChildLinks = [
   },
   {
     id: 20,
-    title: 'Golden Visa ',
+    title: 'Golden Visa',
     description: 'As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ',
     icons: <RiFileList3Fill color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/golden-visa-greece-portugal',

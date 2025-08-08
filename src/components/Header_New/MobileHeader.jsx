@@ -7,6 +7,7 @@ import {
 } from "../StyledComponents/Header";
 import logo from "../../assets/images/SwedenRelocators.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button";
 const MobileHeader = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -30,11 +31,13 @@ const MobileHeader = () => {
       <div className="tw-relative tw-w-full tw-z-[999] tw-overflow-x-hidden mobile-header-container">
         <div className="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-[999]  tw-py-[10px] tw-px-[20px] tw-w-full tw-shadow-md tw-bg-[#fff] ">
           <div className="tw-flex tw-justify-between tw-items-center">
-            <Image
-              link={logo}
-              alt={"Brand Logo"}
-              imageType={"brand-image-extra-small"}
-            />
+            <Link to="/">
+              <Image
+                link={logo}
+                alt={"Brand Logo"}
+                imageType={"brand-image-extra-small"}
+              />
+            </Link>
             {openMenu ? (
               <CancelMenuButton setOpenMenu={setOpenMenu} />
             ) : (

@@ -198,6 +198,7 @@
     "RELOCATION SERVICES": "FLYTTJÄNSTER",
     "We are here to provide you complete Relocation Services, including Housing, Kids School, Visa Services, Registration for Social Benefits, Language School, Integration activities etc.": "Vi är här för att erbjuda dig kompletta flyttjänster, inklusive bostäder, barnskola, visumtjänster, registrering för sociala förmåner, språkskola, integrationsaktiviteter etc.",
     "Long Term EU Resident": "Långtidsboende i EU",
+    "resident_permit_in_sweden": "Uppehållstillstånd i Sverige",
     "ABOUT US": "OM OSS",
     "Welcome To": "Välkommen till",
     "was established in 2015.": "grundades 2015.",
@@ -703,7 +704,9 @@
     "Persian": "Persiska",
     "Urdu": "Urdu",
     "Punjabi": "Punjabi",
-    "Apply Online": "Ansök online",
+    "List your property": "Lista din fastighet",
+    "All Services": "Alla tjänster",
+    "Apply Online": "Ansök Online",
 
     "EU Family": "EU-familj",
     "Reunification Solutions": "Återföreningslösningar",
@@ -762,7 +765,7 @@
     "Download oder DHL": "Ladda ned oder DHL",
     "Once file is completed we will upload on your portal and send you via DHL. All you need to do is to submit to closest Embassy or Gerrys Visa Services office.": "När filen är färdig kommer vi att ladda upp den på din portal och skicka den via DHL. Allt du behöver göra är att lämna in den till närmaste ambassad eller Gerrys Visa Services-kontor.",
     "In Your": "I din",
-    "Inbox News": "Inkorgsnyheter"
-
+    "Inbox News": "Inkorgsnyheter",
+    "Resident Permit in Sweden": "Uppehållstillstånd i Sverige"
 
 }

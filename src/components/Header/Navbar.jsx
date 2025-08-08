@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/SwedenRelocators.png";
 import TopBar from "./TopBar";
+import { useTranslation } from 'react-i18next';
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
   const [housingDropdownOpen, setHousingDropdownOpen] = useState(false);
@@ -233,7 +235,7 @@ const Navbar = () => {
     },
     {
       id: 20,
-      title: "Golden Visa ",
+      title: t("Golden Visa"),
       description:
         "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
       icons: (
@@ -384,7 +386,7 @@ const Navbar = () => {
                               to={`${item?.Link}`}
                             >
                               {/* <p className="  tw-flex tw-gap-1"> {item?.icons}</p> */}
-                              {item?.title}
+                              {t(item?.title)}
                             </Link>
                             <hr className=" tw-border-gray m-0" />
                           </li>
@@ -431,7 +433,7 @@ const Navbar = () => {
                               to={`${item?.Link}`}
                             >
                               {/* <p className="  tw-flex tw-gap-1"> {item?.icons}</p> */}
-                              {item?.title}
+                              {t(item?.title)}
                             </Link>
                           </li>
                           <hr className=" tw-border-gray m-0" />
