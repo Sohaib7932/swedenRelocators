@@ -19,7 +19,22 @@ import TranslationProvider from './context/TranslationContext';
 
 import { SettingsDrawer, SettingsProvider } from './components/settings';
 
+// Import tracking snippets hook
+import { useTrackingSnippets } from './hooks/use-tracking-snippets';
+
 function App() {
+  // Initialize tracking snippets
+  const { isLoading, isInitialized, error } = useTrackingSnippets();
+
+  // Optionally log the tracking snippets status (remove in production)
+  if (process.env.NODE_ENV === 'development') {
+    if (error) {
+      console.warn('Tracking snippets error:', error);
+    } else if (isInitialized) {
+      console.log('Tracking snippets initialized successfully');
+    }
+  }
+
   return (
     <>
    <TranslationProvider>

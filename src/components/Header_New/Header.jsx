@@ -5,7 +5,7 @@ import {
   NavListDesktop,
   Typography,
 } from "../StyledComponents/Header";
-import logo from "../../assets/images/SwedenRelocators.png";
+import logo from "../../assets/images/sweden-logo.png";
 import Button from "../Button";
 import { useEffect, useState } from "react";
 import MobileHeader from "./MobileHeader";
