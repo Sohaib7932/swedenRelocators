@@ -17,7 +17,6 @@ import log2 from "../../assets/iconscout/log2.png";
 
 
 import Header from "../../components/Header_New/Header";
-import ta from "date-fns/locale/ta";
 
 const Logistics = () => {
   const { t,i18n} = useTranslation();

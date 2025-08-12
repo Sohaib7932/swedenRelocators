@@ -274,7 +274,7 @@ export const NavItems = [
   },
   {
     id: 2,
-    name: 'About Us',
+    name: 'About',
     url: '/about_us',
   },
   {
@@ -291,7 +291,7 @@ export const NavItems = [
   },
   {
     id: 5,
-    name: 'Contact Us',
+    name: 'Contact',
     url: '/contact_us',
   },
 ];

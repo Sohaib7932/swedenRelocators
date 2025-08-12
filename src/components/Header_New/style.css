@@ -79,4 +79,70 @@
     padding: 5px;
     text-align: left;
   }
+
+  /* Mobile menu styles */
+  .mobile-menu-open {
+    overflow-x: hidden !important;
+  }
+
+  .mobile-header-container {
+    overflow-x: hidden;
+  }
+
+  .mobile-nav-overlay {
+    overflow-x: hidden;
+  }
+
+  /* Ensure desktop navbar is visible on larger screens */
+  @media (min-width: 1024px) {
+    .mobile-header-container {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .desktop-navbar {
+      display: none !important;
+    }
+  }
+
+  /* Responsive button text sizing - much smaller */
+  .dynamic-text-size {
+    font-size: 0.65rem !important;
+    padding: 0.3rem 0.6rem !important;
+    min-width: auto !important;
+    white-space: nowrap;
+    font-weight: 600 !important;
+  }
+
+  @media (min-width: 1200px) {
+    .dynamic-text-size {
+      font-size: 0.7rem !important;
+      padding: 0.35rem 0.7rem !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .dynamic-text-size {
+      font-size: 0.75rem !important;
+      padding: 0.4rem 0.8rem !important;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .dynamic-text-size {
+      font-size: 0.8rem !important;
+      padding: 0.45rem 0.9rem !important;
+    }
+  }
+
+  /* Navbar hover effects and compactness */
+  .navbar-text {
+    transition: all 0.2s ease;
+  }
+
+  /* Make sure navbar items don't wrap */
+  .desktop-navbar ul {
+    flex-wrap: nowrap;
+  }
   

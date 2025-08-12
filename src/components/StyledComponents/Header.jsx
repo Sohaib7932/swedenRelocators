@@ -89,18 +89,68 @@ export const NavListDesktop = ({ isTop }) => {
   return (
 
 
-    <>
-      <style>
-        {`
-          
-          @media (max-width: 1600px), (max-width: 119px) {
-            .dynamic-text-size {
-              font-size: 0.8em;
+      <>
+        <style>
+          {`
+            /* Base navbar text size - much smaller for better fit */
+            .navbar-text {
+              font-size: 0.65rem !important; /* 10.4px - very small */
+              font-weight: 700 !important;
+              letter-spacing: 0.3px;
+              text-transform: uppercase;
+              color: white !important;
             }
-          }
-        `}
-      </style>
-    <div className="tw-flex tw-justify-center tw-items-center tw-pl-1 tw-gap-4 tw-relative tw-z-[1100]">
+            
+            /* Responsive navbar text sizes */
+            @media (min-width: 1024px) and (max-width: 1200px) {
+              .navbar-text {
+                font-size: 0.6rem !important; /* 9.6px - extra small for tight spaces */
+              }
+            }
+            
+            @media (min-width: 1200px) and (max-width: 1280px) {
+              .navbar-text {
+                font-size: 0.65rem !important; /* 10.4px */
+              }
+            }
+            
+            @media (min-width: 1280px) and (max-width: 1400px) {
+              .navbar-text {
+                font-size: 0.7rem !important; /* 11.2px */
+              }
+            }
+            
+            @media (min-width: 1400px) and (max-width: 1600px) {
+              .navbar-text {
+                font-size: 0.75rem !important; /* 12px */
+              }
+            }
+            
+            @media (min-width: 1600px) {
+              .navbar-text {
+                font-size: 0.8rem !important; /* 12.8px */
+              }
+            }
+            
+            /* Dynamic text size for buttons */
+            .dynamic-text-size {
+              font-size: 0.8rem;
+            }
+            
+            @media (min-width: 1280px) {
+              .dynamic-text-size {
+                font-size: 0.85rem;
+              }
+            }
+            
+            @media (min-width: 1400px) {
+              .dynamic-text-size {
+                font-size: 0.9rem;
+              }
+            }
+          `}
+        </style>
+    <div className="tw-flex tw-justify-center tw-items-center tw-pl-1 tw-gap-2 xl:tw-gap-3 2xl:tw-gap-4 tw-relative tw-z-[1100]">
       {NavItems.map((item) => (
         <div
           key={item.id}
@@ -119,7 +169,7 @@ export const NavListDesktop = ({ isTop }) => {
           }}
         >
           <ul
-            className={`tw-mt-4 !tw-py-2 !tw-px-3 tw-rounded-[20px]   ${hoveredItem === item.id ? 'tw-shadow-[0_0_0_1px_#898a9c]' : ''} tw-flex tw-justify-center tw-items-center gap-2 tw-cursor-pointer
+            className={`tw-mt-4 !tw-py-1.5 !tw-px-2 xl:!tw-py-2 xl:!tw-px-3 tw-rounded-[20px] tw-transition-all tw-duration-200 ${hoveredItem === item.id ? 'tw-shadow-[0_0_0_1px_#898a9c] tw-scale-105' : ''} tw-flex tw-justify-center tw-items-center tw-gap-1 tw-cursor-pointer hover:tw-bg-opacity-10 hover:tw-bg-gray-500
             
             `}
             onClick={() => {
@@ -132,8 +182,8 @@ export const NavListDesktop = ({ isTop }) => {
               setHoveredItem(null);
             }}
           >
-            <li className={`${isTop ? 'tw-text-white tw-text-[1em]' : 'tw-text-[#1f2437]'}   font-extrabold dynamic-text-size`}>{t(item.name)}</li>
-            {item.childLinks && <IoIosArrowDown color={isTop ? '#fff' : '#1f2437'} className={`tw-transition-transform tw-duration-300 ${hoveredItem === item.id ? 'tw-rotate-180' : ''}`} />}
+            <li className={`tw-text-white navbar-text tw-whitespace-nowrap tw-leading-tight tw-font-extrabold`}>{t(item.name)}</li>
+            {item.childLinks && <IoIosArrowDown color={isTop ? '#fff' : '#1f2437'} className={`tw-text-xs tw-transition-transform tw-duration-300 ${hoveredItem === item.id ? 'tw-rotate-180' : ''}`} />}
           </ul>
           {hoveredItem === item.id && item.childLinks && (
             <div className="tw-absolute tw-left-0 tw-top-full tw-z-[1000]">
