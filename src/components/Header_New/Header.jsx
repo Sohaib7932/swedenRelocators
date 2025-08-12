@@ -19,13 +19,13 @@ import { useTranslation } from "react-i18next";
 const Header = () => {
   const [isTop, setIsTop] = useState(true);
   const [isScreenTab, setIsScreenTab] = useState(window.innerWidth);
-  const [isBelow1300px, setIsBelow1300px] = useState(window.innerWidth < 1320);
+  const [isBelow1024px, setIsBelow1024px] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       setIsScreenTab(width);
-      setIsBelow1300px(width < 1320);
+      setIsBelow1024px(width < 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -50,10 +50,10 @@ const Header = () => {
 
   return (
     <>
-      {isBelow1300px ? (
+      {isBelow1024px ? (
         <MobileHeader />
       ) : (
-        <div className="tw-relative tw-w-full">
+        <div className="tw-relative tw-w-full desktop-navbar">
           <Navbar>
             <Flex direction={"flex-direction-column "}>
               {/* Top bar section */}
@@ -102,7 +102,7 @@ const Header = () => {
 
               {/* Navbar section */}
               <div
-                className={`tw-fixed tw-pb-[20px]  tw-pt-[70px]  tw-px-[5.6%]  tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
+                className={`tw-fixed tw-pb-[15px] xl:tw-pb-[20px] tw-pt-[70px] tw-px-[4%] xl:tw-px-[5.6%] tw-bg-[#1f2437] tw-w-full tw-transition-all tw-duration-500 tw-ease-in-out ${
                   isTop
                     ? "tw-translate-y-[0px]"
                     : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
@@ -110,21 +110,20 @@ const Header = () => {
               >
                 <Flex spaceBetween={"space-between"}>
                   <div className="tw-flex tw-justify-center tw-items-center tw-gap-0">
-                    <Link to="/">
+                    <Link to="/" className="tw-mr-4 lg:tw-mr-8 xl:tw-mr-12">
                       <Image
                         link={logo}
                         alt="Sweden Relocators Logo"
                         imageType={"brand-image-small"}
-                        style={{ marginRight: "500px" }}
                       />
                     </Link>
                     <NavListDesktop isTop={isTop} />
                   </div>
-                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">
+                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-0.5 lg:tw-gap-1">
                     <Link to="/register">
                       <Button
                         className={
-                          isTop ? "btn-Plain tw-text-black" : "btn-dark"
+                          isTop ? "btn-Plain tw-text-black dynamic-text-size" : "btn-dark dynamic-text-size"
                         }
                         label={t("Book an Appointment")}
                         onClick={() =>
@@ -137,7 +136,7 @@ const Header = () => {
                       />
                     </Link>
                     <Button
-                      className={isTop ? "btn-Transparent" : "btn-light"}
+                      className={isTop ? "btn-Transparent dynamic-text-size" : "btn-light dynamic-text-size"}
                       label={t("Login")}
                       onClick={() =>
                         window.open(
