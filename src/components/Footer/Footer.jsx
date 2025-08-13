@@ -40,14 +40,14 @@ const Footer = () => {
                           </div>
                           <p className="  m-0 tw-text-white">
                             {" "}
-                            REG 559025-2648
+                            {t('REG 559025-2648')}
                           </p>
                         </li>
                         <li className=" tw-flex  tw-gap-1">
                           <div>
                             <img src={denmark} alt="" />
                           </div>
-                          <p className=" m-0 tw-text-white">{t(`CVR 41200677`)}</p>
+                          <p className=" m-0 tw-text-white">{t('CVR 41200677')}</p>
                         </li>
                       </ul>
                     </div>
@@ -248,7 +248,7 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
+                            <i className="fa fa-calendar" /> {t('Apr 06, 2020')}</span>
                           <Link className=" tw-text-white  tw-text-sm">
                           {t('5 Things To Keep In Mind If You Are Relocating To...')}
                           </Link>
@@ -266,12 +266,12 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
+                            <i className="fa fa-calendar" /> {t('Apr 06, 2020')}</span>
                           <Link to={'/blog_details/1'} className=" tw-text-white  tw-text-sm">
                             {t('5 Things To Keep In Mind If You Are Relocating To Sweden')}
                           </Link>
                           <Link to={'/blog_details/5-things-to-keep-in-mind-if-you-are-relocating-to-sweden'} className=" tw-text-white  tw-text-sm tw-mt-1">
-                            {t('5 Things To Keep In Mind If You Are Relocating To Sweden (Slug)')}
+                            {t('5 Things To Keep In Mind If You Are Relocating To Sweden')}
                           </Link>
                         </div>
                       </li>
@@ -287,12 +287,12 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
+                            <i className="fa fa-calendar" /> {t('Apr 06, 2020')}</span>
                           <Link to={'/blog_details/3'} className=" tw-text-white  tw-text-sm">
                           {t('A Guide About Student Fee And Admissions In Sweden')}
                           </Link>
                           <Link to={'/blog_details/a-guide-about-student-fee-and-admissions-in-sweden'} className=" tw-text-white  tw-text-sm tw-mt-1">
-                            {t('A Guide About Student Fee And Admissions In Sweden (Slug)')}
+                            {t('A Guide About Student Fee And Admissions In Sweden')}
                           </Link>
                         </div>
                       </li>
@@ -308,12 +308,12 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
+                            <i className="fa fa-calendar" /> {t('Apr 06, 2020')}</span>
                           <Link to={'/blog_details/4'} className=" tw-text-white  tw-text-sm">
                             {t('How To Build A Successful Start-Up In Sweden')}
                           </Link>
                           <Link to={'/blog_details/how-to-build-a-successful-start-up-in-sweden'} className=" tw-text-white  tw-text-sm tw-mt-1">
-                            {t('How To Build A Successful Start-Up In Sweden (Slug)')}
+                            {t('How To Build A Successful Start-Up In Sweden')}
                           </Link>
                         </div>
                       </li>
@@ -371,14 +371,14 @@ const Footer = () => {
                           <Link
                             to={"mailto:info@swedenrelocators.se"}
                             className=" m-0 tw-text-white"
-                          >{t(`info@swedenrelocators.se`)}</Link>
+                          >{t('info@swedenrelocators.se')}</Link>
                         </div>
                         <div className="featured-desc">
                         <Link
                             to={"mailto:info@swedenrelocators.se"}
                             className=" m-0 tw-text-white"
                           >
-                          <p className=" tw-text-white">{t('Drop Us Link Line')}</p>
+                          <p className=" tw-text-white">{t('Drop Us A Line')}</p>
                           </Link>
                         </div>
                       </div>
@@ -400,7 +400,7 @@ const Footer = () => {
                           to={"tel:+46 723 276 276"}
                           className="featured-title"
                         >
-                          <p className=" m-0 tw-text-white">{t(`+46 723 276 276`)}</p>
+                          <p className=" m-0 tw-text-white">{t('+46 723 276 276')}</p>
                         </Link>
 
                         <Link

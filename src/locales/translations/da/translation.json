@@ -1,4 +1,7 @@
 {
+  "Login": "Log ind",
+  "About": "Om",
+  "Contact": "Kontakt",
   "All Services": "Alle tjenester",
   "List your property": "Udlej din ejendom",
   "Resident Permit in Sweden": "Opholdstilladelse i Sverige",
@@ -2947,7 +2950,6 @@
   "STUDENT & WORK PERMIT": "STUDENT OG ARBEJDSTILLADELSE",
   "Do you have Assets/Saving?": "Har du aktiver/opsparing?",
   "title": "titel",
-  "Login": "Login",
   "portal_info": "portal_info",
   "Our portal allows you to communicate directly with our team of immigration experts, lawyers who can provide you with guidance & support throughout the relocation & immigration process.": "Vores portal giver dig mulighed for at kommunikere direkte med vores team af immigrationseksperter, advokater, der kan give dig vejledning og støtte gennem hele flytnings- og immigrationsprocessen.",
   "login_with": "log_på_med",

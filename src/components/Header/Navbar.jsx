@@ -319,7 +319,7 @@ const Navbar = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <Link className="navbar-brand   xl:tw-w-56 tw-w-52 " to="/">
+            <Link className="navbar-brand   xl:tw-w-48 tw-w-44 " to="/">
               <img src={logo} alt="" />
             </Link>
 
@@ -408,7 +408,7 @@ const Navbar = () => {
                     onClick={toggleServicesDropdown}
                     aria-expanded={toggleServicesDropdown}
                   >
-                    Services
+                    {t("Services")}
                     <i class="fas ms-2 fa-chevron-down  tw-float-right"></i>
                   </a>
 

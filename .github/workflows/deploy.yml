@@ -1,0 +1,67 @@
+name: Deploy Site to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          set -e
+          echo "Installing dependencies..."
+          npm ci || npm install --legacy-peer-deps
+
+      - name: Build project (Vite -> dist/)
+        run: |
+          set -e
+          echo "Building project..."
+          npm run build
+
+      - name: Inspect workspace (debug)
+        run: |
+          set -e
+          ls -la
+          [ -d dist ] && ls -la dist || (echo "dist/ not found; did build fail?" && exit 1)
+
+      - name: Set up SSH
+        run: |
+          set -e
+          echo "Setting up SSH..."
+          mkdir -p ~/.ssh
+          printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_ed25519
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" -H "${{ secrets.SERVER_IP }}" >> ~/.ssh/known_hosts
+
+      - name: Test SSH connectivity
+        run: |
+          set -e
+          ssh -o IdentitiesOnly=yes -p "${{ secrets.SSH_PORT }}" \
+            "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}" "echo 'SSH OK'"
+
+      - name: Ensure remote deploy path exists
+        run: |
+          set -e
+          ssh -p "${{ secrets.SSH_PORT }}" "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}" \
+            "mkdir -p '${{ secrets.DEPLOY_PATH }}'"
+
+      - name: Upload build to the server (dist/)
+        run: |
+          set -e
+          echo "Uploading new build to server..."
+          scp -P "${{ secrets.SSH_PORT }}" -i ~/.ssh/id_ed25519 -r dist/* \
+            "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}/"
