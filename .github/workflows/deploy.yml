@@ -1,4 +1,4 @@
-name: Deploy Next.js Site to Server
+name: Deploy Site to Server
 
 on:
   push:
@@ -21,28 +21,47 @@ jobs:
       - name: Install dependencies
         run: |
           set -e
-          printf "Installing dependencies...\n"
-          npm install --legacy-peer-deps
+          echo "Installing dependencies..."
+          npm ci || npm install --legacy-peer-deps
 
-      - name: Build project
+      - name: Build project (Vite -> dist/)
         run: |
           set -e
-          printf "Building project...\n"
+          echo "Building project..."
           npm run build
+
+      - name: Inspect workspace (debug)
+        run: |
+          set -e
+          ls -la
+          [ -d dist ] && ls -la dist || (echo "dist/ not found; did build fail?" && exit 1)
 
       - name: Set up SSH
         run: |
           set -e
-          printf "Setting up SSH...\n"
+          echo "Setting up SSH..."
           mkdir -p ~/.ssh
           printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_ed25519
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" -H "${{ secrets.SERVER_IP }}" >> ~/.ssh/known_hosts
 
-      - name: Upload build to the server
+      - name: Test SSH connectivity
         run: |
           set -e
-          printf "Uploading new build to server...\n"
-          scp -i ~/.ssh/id_ed25519 -r build/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}
+          ssh -o IdentitiesOnly=yes -p "${{ secrets.SSH_PORT }}" \
+            "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}" "echo 'SSH OK'"
+
+      - name: Ensure remote deploy path exists
+        run: |
+          set -e
+          ssh -p "${{ secrets.SSH_PORT }}" "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}" \
+            "mkdir -p '${{ secrets.DEPLOY_PATH }}'"
+
+      - name: Upload build to the server (dist/)
+        run: |
+          set -e
+          echo "Uploading new build to server..."
+          scp -P "${{ secrets.SSH_PORT }}" -i ~/.ssh/id_ed25519 -r dist/* \
+            "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}/"
