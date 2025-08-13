@@ -41,13 +41,6 @@ jobs:
           ssh-add ~/.ssh/id_ed25519
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Clean old files (except .well-known)
-        run: |
-          set -e
-          printf "Cleaning old files on server (except .well-known)...\n"
-          ssh -i ~/.ssh/id_ed25519 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} \
-            'find ${{ secrets.DEPLOY_PATH }} -mindepth 1 -maxdepth 1 ! -name ".well-known" -exec rm -rf {} +'
-
       - name: Upload build to the server
         run: |
           set -e
