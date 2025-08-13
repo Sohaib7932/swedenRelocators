@@ -1,4 +1,6 @@
 {
+  "About": "ਬਾਰੇ",
+  "Contact": "ਸੰਪਰਕ",
   "Mon - Fri 10.00 - 18.00": "ਸੋਮਵਾਰ - ਸ਼ੁੱਕਰਵਾਰ 10.00 - 18.00",
     "Amiralsgatan 86E 214 37 Malmö, Sweden": "ਅਮੀਰਾਲਸਗਟਨ 86E 214 37 ਮਾਲਮੋ, ਸਵੀਡਨ",
     "Book an appointment for required visa category": "ਲੋੜੀਂਦੀ ਵੀਜ਼ਾ ਸ਼੍ਰੇਣੀ ਲਈ ਅੱਪਾਇੰਟਮੈਂਟ ਬੁੱਕ ਕਰੋ",
@@ -767,6 +769,7 @@
   "Once file is completed we will upload on your portal and send you via DHL. All you need to do is to submit to closest Embassy or Gerrys Visa Services office.": "ਜਦੋਂ ਫਾਇਲ ਪੂਰੀ ਹੋ ਜਾਵੇਗੀ ਤਾਂ ਅਸੀਂ ਇਸ ਨੂੰ ਤੁਹਾਡੇ ਪੋਰਟਲ ਤੇ ਅਪਲੋਡ ਕਰਾਂਗੇ ਅਤੇ ਤੁਹਾਨੂੰ DHL ਰਾਹੀਂ ਭੇਜਾਂਗੇ। ਤੁਹਾਨੂੰ ਸਿਰਫ ਇਸ ਨੂੰ ਨਜ਼ਦੀਕੀ ਦੂਤਾਵਾਸ ਜਾਂ ਗੈਰੀਜ਼ ਵੀਜ਼ਾ ਸੇਵਾਵਾਂ ਦੇ ਦਫ਼ਤਰ ਵਿੱਚ ਜਮ੍ਹਾ ਕਰਵਾਉਣਾ ਹੈ।",
   "In Your": "ਤੁਹਾਡੇ",
   "Resident Permit in Sweden": "ਸਵੀਡਨ ਵਿੱਚ ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ",
-  "All Services": "ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ"
+  "All Services": "ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ",
+  "SERVICES": "ਸੇਵਾਵਾਂ"
     
 }
