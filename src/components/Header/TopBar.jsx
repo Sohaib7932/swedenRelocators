@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import LanguageSelector from "../language/LanguageSelector";
 const TopBar = () => {
+  const { t } = useTranslation();
   const LANGUAGES = [
     { label: "Spanish", code: "es" },
     { label: "English", code: "en" },
@@ -17,7 +19,7 @@ const TopBar = () => {
               <div className=" tw-flex tw-flex-wrap tw-items-center tw-gap-4 tw-justify-center md:tw-justify-start tw-text-center ">
                 <p className="   tw-text-sm      tw-border-gray  tw-text-white">
                   <i class="ti ti-alarm-clock"></i>
-                  Mon - Fri 10.00 - 18.02
+                  {t('Mon - Fri 10.00 - 18.00')}
                 </p>
                 <span
                   className="  tw-h-5  tw-mb-4 tw-bg-gray  tw-border-gray"
@@ -25,7 +27,7 @@ const TopBar = () => {
                 ></span>
                 <p className="    tw-text-sm tw-text-white">
                   <i class="ti ti-location-pin"></i>
-                  Amiralsgatan 86E 214 37 Malmö, Sweden
+                  {t('Amiralsgatan 86E 214 37 Malmö, Sweden')}
                 </p>
               </div>
             </div>
@@ -37,7 +39,7 @@ const TopBar = () => {
                       to={"/book_your_appointment"}
                       className="tw-text-sm  tw-text-white"
                     >
-                      <i class="fa fa-calendar-check"></i> Book an Appointment{" "}
+                      <i class="fa fa-calendar-check"></i> {t('Book an Appointment!')}{" "}
                     </Link>
                   </div>
 
@@ -52,13 +54,13 @@ const TopBar = () => {
                       to={"/login"}
                       className="sign_up tw-outline-none  hover:tw-text-white tw-font-medium tw-bg-blue tw-py-3.5 tw-px-4  tw-border-r tw-text-white tw-text-[15px] tw-flex  tw-items-center"
                     >
-                      My Page
+                      {t('My Page')}
                     </Link>
                     <Link
                       to={"/set_up_your_account"}
                       className=" sign_up tw-outline-none  hover:tw-text-white tw-font-medium tw-bg-blue tw-py-3.5 tw-px-4  tw-w-44  tw-text-white tw-text-[15px] tw-flex  tw-items-center"
                     >
-                      Sign Up
+                      {t('Sign Up')}
                     </Link>
                   </div>
                 </div>

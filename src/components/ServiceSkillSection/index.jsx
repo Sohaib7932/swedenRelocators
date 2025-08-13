@@ -117,8 +117,8 @@ const SkillSection = () => {
 
 
                 <ol className="tw-list-decimal tw-text-gray">
-                  <li className="tw-pt-4"><strong>{t(`Sign Up`)} </strong>& {t(`Book an Appointment`)}</li>
-                  <li className="tw-pt-4">{t('Sign a')} <strong>{t(`Power of Attorney`)}</strong> {t('and')} <strong>{t('Service Agreement')}</strong></li>
+                  <li className="tw-pt-4"><strong>{t(`Sign Up`)} </strong> & {t(`Book an Appointment`)}</li>
+                  <li className="tw-pt-4">{t('Sign a')} <strong>{t(`Power of Attorney`)}</strong> {t('&')} <strong>{t('Service Agreement')}</strong></li>
                   <li className="tw-pt-4">{t('Pay the')} <strong>{t(`Service Invoice`)} </strong></li>
                   <li className="tw-pt-4">{t('Track your application status until completion')}</li>
 

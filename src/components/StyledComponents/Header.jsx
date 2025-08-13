@@ -98,7 +98,7 @@ export const NavListDesktop = ({ isTop }) => {
               font-weight: 700 !important;
               letter-spacing: 0.3px;
               text-transform: uppercase;
-              color: white !important;
+              color: ${isTop ? 'white' : '#1f2437'} !important;
             }
             
             /* Responsive navbar text sizes */
@@ -182,7 +182,7 @@ export const NavListDesktop = ({ isTop }) => {
               setHoveredItem(null);
             }}
           >
-            <li className={`tw-text-white navbar-text tw-whitespace-nowrap tw-leading-tight tw-font-extrabold`}>{t(item.name)}</li>
+            <li className={`navbar-text tw-whitespace-nowrap tw-leading-tight tw-font-extrabold`}>{t(item.name)}</li>
             {item.childLinks && <IoIosArrowDown color={isTop ? '#fff' : '#1f2437'} className={`tw-text-xs tw-transition-transform tw-duration-300 ${hoveredItem === item.id ? 'tw-rotate-180' : ''}`} />}
           </ul>
           {hoveredItem === item.id && item.childLinks && (
