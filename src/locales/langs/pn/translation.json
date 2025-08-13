@@ -42,11 +42,12 @@
     "A Guide About Student Fee And Admissions In Sweden": "ਸਵੀਡਨ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਫੀਸ ਅਤੇ ਦਾਖਲਾ ਬਾਰੇ ਗਾਈਡ",
     "There are full service engage company is to provide solution for employees needs training...": "ਇੱਕ ਪੂਰੀ ਸੇਵਾ ਵਾਲੀ ਕੰਪਨੀ ਹੈ ਜੋ ਕਰਮਚਾਰੀਆਂ ਦੀਆਂ ਲੋੜਾਂ ਲਈ ਹੱਲ ਮੁਹੱਈਆ ਕਰਦੀ ਹੈ...",
     "About Us": "ਸਾਡੇ ਬਾਰੇ",
-    "We are Relocation Services Provider Company which deals with all sort of legal relocation to Sweden. We offer quality guidance, effective advice and provide information to our clients to settle down in the country.": "ਅਸੀਂ ਇੱਕ ਰਿਲੋਕੇਸ਼ਨ ਸੇਵਾਵਾਂ ਪ੍ਰਦਾਤਾ ਕੰਪਨੀ ਹਾਂ ਜੋ ਸਵੀਡਨ ਲਈ ਸਾਰੇ ਤਰ੍ਹਾਂ ਦੀਆਂ ਕਾਨੂੰਨੀ ਰਿਲੋਕੇਸ਼ਨ ਸੇਵਾਵਾਂ ਨਾਲ ਨਿਭਾਉਂਦੀ ਹੈ। ਅਸੀਂ ਆਪਣੇ ਗਾਹਕਾਂ ਨੂੰ ਦੇਸ਼ ਵਿੱਚ ਵਸਣ ਲਈ ਗੁਣਵੱਤਾ ਵਾਲੀ ਰਾਹਨੁਮਾਈ, ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਸਲਾਹ ਅਤੇ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।",
+    "We are Relocation Services Provider Company which deals with all sort of legal relocation to Sweden. We offers quality guidance, effective advice and provides information to our clients to settle down in the country.": "ਅਸੀਂ ਇੱਕ ਰਿਲੋਕੇਸ਼ਨ ਸੇਵਾਵਾਂ ਪ੍ਰਦਾਤਾ ਕੰਪਨੀ ਹਾਂ ਜੋ ਸਵੀਡਨ ਲਈ ਸਾਰੇ ਤਰ੍ਹਾਂ ਦੀਆਂ ਕਾਨੂੰਨੀ ਰਿਲੋਕੇਸ਼ਨ ਸੇਵਾਵਾਂ ਨਾਲ ਨਿਭਾਉਂਦੀ ਹੈ। ਅਸੀਂ ਆਪਣੇ ਗਾਹਕਾਂ ਨੂੰ ਦੇਸ਼ ਵਿੱਚ ਵਸਣ ਲਈ ਗੁਣਵੱਤਾ ਵਾਲੀ ਰਾਹਨੁਮਾਈ, ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਸਲਾਹ ਅਤੇ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।",
     "REG 559025-2648": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ 559025-2648",
     "CVR 41200677": "ਸੀਵੀਆਰ 41200677",
     "Useful Links": "ਲਾਭਦਾਇਕ ਲਿੰਕ",
     "Contact Us": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+    "Contact US": "ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
     "Services": "ਸੇਵਾਵਾਂ",
     "Gallery": "ਗੈਲਰੀ",
     "Careers": "ਕਰੀਅਰਜ਼",
@@ -770,6 +771,18 @@
   "In Your": "ਤੁਹਾਡੇ",
   "Resident Permit in Sweden": "ਸਵੀਡਨ ਵਿੱਚ ਰਿਹਾਇਸ਼ੀ ਪਰਮਿਟ",
   "All Services": "ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ",
-  "SERVICES": "ਸੇਵਾਵਾਂ"
+    "SERVICES": "ਸੇਵਾਵਾਂ",
+    "Who We are": "ਅਸੀਂ ਕੌਣ ਹਾਂ",
+    "Relocation and Immigration": "ਤਬਦੀਲੀ ਅਤੇ ਇਮੀਗ੍ਰੇਸ਼ਨ",
+    "Services Provider": "ਸੇਵਾ ਪ੍ਰਦਾਤਾ",
+    "We are a trusted provider of relocation and immigration services, dedicated to assisting individuals and businesses in navigating complex processes with ease. As proud members of EuRA (European Relocation Association) and IIA (Immigration Industry Association), we uphold the highest standards in service delivery. Our mission is to make your relocation and immigration journey seamless and stress-free, offering complete transparency and control through our user-friendly digital portal and apps.": "ਅਸੀਂ ਤਬਦੀਲੀ ਅਤੇ ਇਮੀਗ੍ਰੇਸ਼ਨ ਸੇਵਾਵਾਂ ਦੇ ਇੱਕ ਭਰੋਸੇਮੰਦ ਪ੍ਰਦਾਤਾ ਹਾਂ, ਜੋ ਵਿਅਕਤੀਆਂ ਅਤੇ ਵਪਾਰਾਂ ਨੂੰ ਗੁੰਝਲਦਾਰ ਪ੍ਰਕਿਰਿਆਵਾਂ ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਨੈਵਿਗੇਟ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਹਾਂ। EuRA (ਯੂਰਪੀਅਨ ਰਿਲੋਕੇਸ਼ਨ ਐਸੋਸੀਏਸ਼ਨ) ਅਤੇ IIA (ਇਮੀਗ੍ਰੇਸ਼ਨ ਇੰਡਸਟਰੀ ਐਸੋਸੀਏਸ਼ਨ) ਦੇ ਮਾਣਮੱਤੇ ਮੈਂਬਰਾਂ ਦੇ ਤੌਰ 'ਤੇ, ਅਸੀਂ ਸੇਵਾ ਪ੍ਰਦਾਨ ਕਰਨ ਵਿੱਚ ਸਭ ਤੋਂ ਉੱਚੇ ਮਿਆਰਾਂ ਨੂੰ ਬਰਕਰਾਰ ਰੱਖਦੇ ਹਾਂ। ਸਾਡਾ ਮਿਸ਼ਨ ਤੁਹਾਡੀ ਤਬਦੀਲੀ ਅਤੇ ਇਮੀਗ੍ਰੇਸ਼ਨ ਯਾਤਰਾ ਨੂੰ ਨਿਰਵਿਘਨ ਅਤੇ ਤਣਾਅ-ਮੁਕਤ ਬਣਾਉਣਾ ਹੈ, ਸਾਡੇ ਉਪਭੋਗਤਾ-ਅਨੁਕੂਲ ਡਿਜੀਟਲ ਪੋਰਟਲ ਅਤੇ ਐਪਸ ਦੁਆਰਾ ਪੂਰੀ ਪਾਰਦਰਸ਼ਤਾ ਅਤੇ ਨਿਯੰਤਰਣ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹੋਏ।",
+    "How it Works": "ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
+    "Sign Up & ਅੱਪਾਇੰਟਮੈਂਟ ਬੁੱਕ ਕਰੋ": "ਸਾਈਨ ਅਪ ਕਰੋ ਅਤੇ ਅੱਪਾਇੰਟਮੈਂਟ ਬੁੱਕ ਕਰੋ",
+    "Sign Up &": "ਸਾਈਨ ਅਪ ਕਰੋ ਅਤੇ",
+    "Sign Up": "ਸਾਈਨ ਅਪ ਕਰੋ",
+    "Sign a Power of Attorney and Service Agreement": "ਪਾਵਰ ਆਫ਼ ਅਟਾਰਨੀ ਅਤੇ ਸੇਵਾ ਸਮਝੌਤੇ ਤੇ ਹਸਤਾਖਰ ਕਰੋ",
+    "Pay the Service Invoice": "ਸੇਵਾ ਦਾ ਬਿੱਲ ਅਦਾ ਕਰੋ",
+    "Track your application status until completion": "ਪੂਰਾ ਹੋਣ ਤੱਕ ਆਪਣੀ ਅਰਜ਼ੀ ਦੀ ਸਥਿਤੀ ਟਰੈਕ ਕਰੋ",
+    "To get started, we recommend using our assessment tool to check your basic eligibility. Let us simplify your journey!": "ਸ਼ੁਰੂ ਕਰਨ ਲਈ, ਅਸੀਂ ਆਪਣੀ ਬੁਨਿਆਦੀ ਯੋਗਤਾ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ ਸਾਡੇ ਮੁਲਾਂਕਣ ਟੂਲ ਦੀ ਵਰਤੋਂ ਕਰਨ ਦੀ ਸਿਫਾਰਿਸ਼ ਕਰਦੇ ਹਾਂ। ਸਾਨੂੰ ਤੁਹਾਡੀ ਯਾਤਰਾ ਨੂੰ ਸੌਖਾ ਬਣਾਉਣ ਦਿਓ!"
     
 }
