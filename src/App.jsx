@@ -22,7 +22,7 @@ import { SettingsDrawer, SettingsProvider } from './components/settings';
 // Import tracking snippets hook
 import { useTrackingSnippets } from './hooks/use-tracking-snippets';
 
-function App() {
+function App()  {
   // Initialize tracking snippets
   const { isLoading, isInitialized, error } = useTrackingSnippets();
 
